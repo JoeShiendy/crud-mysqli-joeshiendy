@@ -26,7 +26,7 @@ if (!$row) {
     <h2>Edit Data Customer Shiennails</h2>
     <a href="index.php">← Kembali</a><br><br>
 
-    <form action="../process/edit_process.php" method="POST">
+    <form action="../process/edit_proses.php" method="POST">
         <input type="hidden" name="id" value="<?= $row['id']; ?>">
 
         <label>Nama Customer:</label><br>

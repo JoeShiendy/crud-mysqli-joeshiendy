@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Update data dengan Prepared Statement (Ketentuan No. 4)
     $stmt = $conn->prepare("UPDATE customers SET nama_customer=?, no_whatsapp=?, layanan=?, total_bayar=?, tanggal_booking=? WHERE id=?");
-    $stmt->bind_param("ssiisi", $nama_customer, $no_whatsapp, $layanan, $total_bayar, $tanggal_booking, $id);
+    $stmt->bind_param("sssisi", $nama_customer, $no_whatsapp, $layanan, $total_bayar, $tanggal_booking, $id);
 
     if ($stmt->execute()) {
         header("Location: ../views/index.php");

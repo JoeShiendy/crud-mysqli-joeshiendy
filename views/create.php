@@ -9,7 +9,7 @@
     <h2>Tambah Customer Baru Shiennails</h2>
     <a href="index.php">← Kembali ke Dashboard</a><br><br>
 
-    <form action="../process/add_process.php" method="POST">
+    <form action="../process/add_proses.php" method="POST">
         
         <label>Nama Customer:</label><br>
         <input type="text" name="nama_customer" required placeholder="Nama Lengkap"><br><br>

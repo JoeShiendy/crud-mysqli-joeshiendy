@@ -28,7 +28,8 @@ if (!$result) {
                 <th>Nama Customer</th>
                 <th>No. WhatsApp</th>
                 <th>Layanan / Treatment</th>
-                <th>Total Bayar</th> <th>Tanggal Booking</th>
+                <th>Total Bayar</th>
+                <th>Tanggal Booking</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -46,7 +47,7 @@ if (!$result) {
                     <td>Rp <?= number_format($row['total_bayar'], 0, ',', '.'); ?></td> <td><?= date('d-m-Y', strtotime($row['tanggal_booking'])); ?></td>
                     <td>
                         <a href="edit.php?id=<?= $row['id']; ?>">Edit</a> | 
-                        <a href="../process/delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin ingin menghapus data customer ini?')">Hapus</a>
+                        <a href="../process/delete_proses.php?id=<?= $row['id']; ?>" onclick="return confirm('Yakin ingin menghapus data customer ini?')">Hapus</a>
                     </td>
                 </tr>
             <?php 
